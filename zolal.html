@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/zolal/style.css">
+    <link rel="stylesheet" href="style/zolal/mobile.css" media="(max-width:500px)">
+    <title>زلال اندیشه</title>
+    <script src="script/profile/data.js"></script>
+</head>
+<body> 
+   
+    <header>
+        <img src="photo/leader.png" alt="خطای بارگزاری">
+        <h1>مرکز زلال اندیشه دانشگاه قم</h1>
+        <div><img src="photo/nahad-logo.png" alt="خطای بارگزاری">
+            <img src="photo/zolal-logo.png" alt="خطای بارگزاری">
+        </div>
+    </header>
+<section class="bod">
+    <section class="main">
+        <div  class="chois">
+            <div id="select"></div>
+            <h3 id="Andishe">اندیشه 2</h3>
+            <h3 id="Garyan">جریان شناسی</h3>
+        </div>
+        <div id="teacher"></div>
+        <button type="button" id="load" onclick="loadFile('sours')">بارگزاری صوت درس</button>
+        <div id="sours"></div>
+    </section>
+    <section class="main">
+        <h3>مشکلات خود را با ما در میان بگذارید</h3>
+        
+        <form action="https://formsubmit.co/zolal.andishe.qom@gmail.com" method="post">
+            <label for="trobel">مشکل خود را شرح دهید</label>
+            <textarea name="trobel" id="problem" placeholder="لطفا در صورت امکان مستندات  تصویری ارایه کنید////بنابر پاره ای از مشکلات آپلود فایل دارای مشکل است" required></textarea>
+            <div id="filediv">
+                <input id="file" type="file" hidden>
+                <div>
+                <button id="cfile" type="button">انتخاب فایل</button>
+                <p id="name">address of your file</p>
+                </div>
+                        
+                <input type="hidden" name="_subject" value="گزارش مشکل">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://zolalandisheqom.github.io/university/zolal.html?login=true&point=1217&claint=1069">
+            </div>
+            <button type="submit">ارسال</button>
+        </form>
+    </section>
+</section>
+
+<footer>
+    <div hidden>
+    <a href="home.html?login=true">صفحه اصلی</a>  |  <a href="profile.html">پروفایل</a>
+    </div>
+    <h6>تمام حقوق مادی و معنوی سایت متعلق به سازنده می باشد</h6>
+</footer>
+<script>
+    const hs = new URLSearchParams(location.search)
+    const h = hs.get("login")
+    const hp = hs.get("point")
+    const hc = hs.get("claint")
+    if(h === 'true' & cofing.includes(Number(hp))&cofing.includes(Number(hc))){
+        let elefen
+    }
+    else{
+        window.location.href="https://zolalandisheqom.github.io/university/"
+    }
+</script>
+    <script src="script/zolal/script.js"></script>
+</body>
+</html>
