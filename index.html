@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/login/style.css">
+    <title>ورود</title>
+    <script src="script/profile/data.js"></script>
+</head>
+<body>
+    <header>
+        <img src="photo/leader.png" alt="خطای بارگزاری">
+        <h1>زلال اندیشه دانشگاه قم</h1>
+        <div><img src="photo/nahad-logo.png" alt="خطای بارگزاری">
+            <img src="photo/zolal-logo.png" alt="خطای بارگزاری">
+        </div>  
+    </header>
+    <form action="index.html">
+        <div class="input">
+            <input id="intcode" name="code" type="number" minlength="11" maxlength="11" placeholder=" " required>
+            <label id="code" for="code">کد دانشجویی</label>
+        </div>
+        <div class="input">
+            <input id="intpass" name="pass" type="password" minlength="8" maxlength="16" placeholder=" " required>
+            <label id="pass" for="pass">رمز عبور</label>
+        </div>
+        <button type="button" id="sub">ورود</button> <button id="submite" type="submit" hidden></button>
+        <h6>کاربر سایت ما نیستید؟ <a href="sin.html">همین حالا ثبت نام کنید</a></h6>
+    </form>
+
+    <script src="script/login/log.js"></script>
+</body>
+</html>
