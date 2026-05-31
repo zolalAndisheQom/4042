@@ -51,7 +51,7 @@ const audio_tahri = [
 ] 
 const teachers= {
     Safari : {"استاد" : "حجت الاسلام صفاریان و عیسوند", "ترم" : "4032", "فایل‌های آپلود شده" : tofarsi(audio_safari.length+Link_safari.length,"فایل")},
-    Taheri :  {"استاد" : "دکتر طاهری", "ترم" : "4032", "فایل‌های آپلود شده" : tofarsi(audio_tahri.length+Link_tahri.length,"فایل")}
+    Taheri :  {"استاد" : "دکتر طاهریان", "ترم" : "4032", "فایل‌های آپلود شده" : tofarsi(audio_tahri.length+Link_tahri.length,"فایل")}
 }
 
 function tofarsi(number,pas = "",ohm =false) {
