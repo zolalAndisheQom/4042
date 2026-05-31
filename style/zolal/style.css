@@ -1,0 +1,283 @@
+/* =======================
+   Root Theme Variables
+======================= */
+
+:root {
+    --primary:   #1E3A8A;
+    --secondary: #3B82F6;
+    --bg-main:   #F8FAFC;
+    --card-bg:   #FFFFFF;
+    --border:    #E5E7EB;
+    --success:   #10B981;
+    --warning:   #F59E0B;
+    --text-main: #1F2937;
+    --text-soft: #6B7280;
+  }
+  
+  /* =======================
+     Global Reset
+  ======================= */
+  
+  * {
+    box-sizing: border-box;
+    direction: rtl;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--bg-main);
+    font-family: Vazirmatn, IRANSans, system-ui, sans-serif;
+    color: var(--text-main);
+  }
+  
+  /* =======================
+     Header
+  ======================= */
+  
+  header {
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px 0 18px;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  }
+  
+  header img {
+    width: 10%;
+  }
+  
+  header h1 {
+    font-size: xx-large;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+  }
+  header div{
+    width: 13%;
+    display: flex;
+  }
+  header div img{
+    width: 50%;
+  }
+  
+  /* =======================
+     Main Layout
+  ======================= */
+  
+  .bod {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 16px;
+    display: grid;
+    gap: 26px;
+  }
+  
+  .main {
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+  }
+  
+  
+  /* =======================
+     Course Tabs
+  ======================= */
+  
+  .chois {
+    background: #E5E7EB;
+    border-radius: 14px;
+    display: flex;
+    position: relative;
+    padding: 6px;
+    margin-bottom: 18px;
+    overflow: hidden;
+  }
+  
+  .chois h3 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    padding: 10px 0;
+    cursor: pointer;
+    z-index: 2;
+    color: #6B7280;
+    transition: .2s;
+    user-select: none;
+  }
+  
+  .chois h3.active {
+    color: #fff;
+  }
+  
+  #select {
+    position: absolute;
+    width: calc(50% - 6px);
+    height: calc(100% - 12px);
+    background: var(--primary);
+    border-radius: 10px;
+    top: 6px;
+    right: 6px;
+    transition: transform .35s cubic-bezier(.4,0,.2,1);
+    z-index: 1;
+  }
+  
+  #select.select {
+    transform: translateX(-100%);
+  }
+  
+  /* =======================
+     Teacher Info
+  ======================= */
+  
+  #teacher {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 4px solid var(--primary);
+    padding: 14px;
+    background: #F9FAFB;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    
+  }
+  .information{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .information h5{
+    min-width: 110px;
+    font-size: 15px;
+  }
+  
+  /* =======================
+     Upload Section
+  ======================= */
+  
+  #load {
+    width: 100%;
+    padding: 12px;
+    border-radius: 14px;
+    border: none;
+    background: var(--success);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  #load:hover {
+    filter: brightness(1.1);
+  }
+  
+  #sours {
+    margin-top: 12px;
+  }
+  
+  /* =======================
+     Trouble Form
+  ======================= */
+  
+  form {
+    margin-top: 10px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: var(--text-soft);
+  }
+  
+  textarea {
+    width: 100%;
+    min-height: 120px;
+    border-radius: 14px;
+    border: 1.5px solid var(--border);
+    padding: 12px;
+    outline: none;
+    resize: vertical;
+    font-family: inherit;
+    transition: .2s;
+  }
+  
+  textarea:focus {
+    border-color: var(--secondary);
+  }
+  
+  /* =======================
+     File Upload
+  ======================= */
+  
+  #filediv {
+    margin: 14px 0;
+  }
+  
+  #filediv div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  #cfile {
+    background: var(--secondary);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 14px;
+    cursor: pointer;
+  }
+  
+  #name {
+    font-size: 12px;
+    color: var(--text-soft);
+    margin: 0;
+  }
+  
+  /* =======================
+     Submit Button
+  ======================= */
+  
+  form button[type="submit"] {
+    background: var(--primary);
+    border: none;
+    border-radius: 14px;
+    padding: 12px;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  form button[type="submit"]:hover {
+    filter: brightness(1.1);
+  }
+  
+  /* =======================
+     Footer
+  ======================= */
+  
+  footer {
+    text-align: center;
+    padding: 14px 10px 20px;
+    color: var(--text-soft);
+    font-size: 12px;
+  }
+  
+  /* =======================
+     Responsive
+  ======================= */
+  @media (max-width: 700px) {
+    header h1 {
+      font-size: 15px;
+    }
+  }

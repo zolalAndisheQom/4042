@@ -1,0 +1,22 @@
+.main{
+    position: relative; top: 150px;padding: 0 15px; width: 40%;
+}
+h1{
+    font-size: large;
+    font-size: xx-large;
+}
+p{
+    padding: 0 15px;
+    font-size: large;
+}
+@media (max-width:500px) {
+    .main{
+        width: 80%;
+    }
+    h1{
+        font-size: large
+    }
+    p{
+        font-size: small;
+    }
+}

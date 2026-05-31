@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/login/style.css">
+    <title>ثبت نام</title>
+    <script src="script/profile/data.js"></script>
+</head>
+<body>
+     
+    <header>
+        <img src="photo/leader.png" alt="خطای بارگزاری">
+        <h1>زلال اندیشه دانشگاه قم</h1>
+        <div><img src="photo/nahad-logo.png" alt="خطای بارگزاری">
+            <img src="photo/zolal-logo.png" alt="خطای بارگزاری">
+        </div>  
+    </header>
+    <form action="https://formsubmit.co/zolal.andishe.qom@gmail.com" method="post">
+        <div class="input">
+            <input id="intname" type="text" name="name" placeholder=" " required>
+            <label id="name" for="name">نام‌و نام‌خانوادگی</label>
+        </div>
+        <div class="input">
+            <input id="intcode" type="number" name="code" placeholder=" " required>
+            <label id="code" for="code">کد دانشجویی</label>
+        </div>
+        <input type="hidden" name="_subject" value="درخواست ثبت نام">
+        <input type="hidden" name="_captcha" value="false">
+        <input id="tk" type="hidden" name="_next" >
+        <div class="input">
+            <input id="intpass" type="password" name="pass" placeholder=" " required>
+            <label id="pass" for="pass">رمز عبور</label>
+        </div>
+        <div class="input">
+            <input id="intpassage" type="password" name="passage" placeholder=" " required>
+            <label id="passage" for="passage">بررسی رمز عبور</label>
+        </div>
+        <button type="button" id="sub">ثبت نام</button>
+        <button type="submit" id="subm" hidden></button>
+    </form>
+<script src="script/login/sin.js"></script>
+</body>
+</html>
