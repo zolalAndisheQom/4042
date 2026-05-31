@@ -24,7 +24,7 @@ const cofing=[
 
 const audio_safari = [
     "audio/A2E2.mp3",
-    "audio\E3-Andishe.mp3"
+    "audio/E3-Andishe.mp3"
 ]
 const Link_safari =[
     "https://adobe.qom.ac.ir/pz45cb64jw94/",
@@ -45,9 +45,9 @@ const Link_tahri = [
 ]
 const audio_tahri = [
     "audio/GE2.mp3",
-    "audio\E3-Garyan.mp3",
-    "audio\E4-Garyan.mp3",
-    "audio\E5-Garyan_01.mp3"
+    "audio/E3-Garyan.mp3",
+    "audio/E4-Garyan.mp3",
+    "audio/E5-Garyan_01.mp3"
 ] 
 const teachers= {
     Safari : {"استاد" : "حجت الاسلام صفاریان و عیسوند", "ترم" : "4032", "فایل‌های آپلود شده" : tofarsi(audio_safari.length+Link_safari.length,"فایل")},
