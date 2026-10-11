@@ -1,3 +1,11 @@
+@font-face {
+font-family: 'B Nazanin';
+src: url('../../front/B-NAZANIN.woff2') format('woff2');
+font-weight: 700;
+font-style: normal;
+font-display: swap;
+}
+
 /* =======================
    Root Theme Variables
 ======================= */
@@ -26,7 +34,7 @@
   body {
     margin: 0;
     background: var(--bg-main);
-    font-family: Vazirmatn, IRANSans, system-ui, sans-serif;
+    font-family: B Nazanin;
     color: var(--text-main);
   }
   
